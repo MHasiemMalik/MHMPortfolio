@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resizable Iframes with Overlapping Images</title>
+<style>
+    /* Style for iframes */
+    iframe {
+        border: 1px solid #ccc;
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /* Style for images */
+    img {
+        position: absolute;
+        z-index: 0;
+    }
+
+    /* Style for buttons */
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    #iframesContainer {
+        position: relative;
+     }
+
+     
+     #pblock {
+  
+  width: 600px; /* Ensure positioning context for absolute positioning */
+}
+
+#pentbgs{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 600px;
+   height: 450px;
+}
+#pimg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 600px;
+  height: 400px;
+}
+
+#pentbgs {
+  z-index: 0; /* Ensure SVG is behind the image */
+}
+
+#pimg {
+  z-index: 1; /* Ensure image is on top of the SVG */
+}
+</style>
+</head>
+<body>
+
+<button onclick="loadIframes()">Load Iframes</button>
+<div id="iframesContainer"></div>
+
+<svg id="pentbgs"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0004 0.700195L22.7473 8.5083L18.6423 21.1421H5.35838L1.25342 8.5083L12.0004 0.700195Z"></path></svg>
+            <img src="assets/img/portpic04.png" alt="" class="pimg" id="pimg">
+
+<script>
+function loadIframes() {
+    // Get the container div
+    var container = document.getElementById("iframesContainer");
+
+    // Create first iframe
+    var iframe1 = document.createElement("iframe");
+    iframe1.src = "https://mhasiemmalik.github.io/FarmPlusRepo/"; // Replace with your URL
+    iframe1.width = "260"; // Initial width
+    iframe1.height = "625"; // Initial height
+    iframe1.style.left = "84px";
+    iframe1.style.top = "120px"; // Position on the left
+    
+
+    // Create second iframe
+    var iframe2 = document.createElement("iframe");
+    iframe2.src = "https://mhasiemmalik.github.io/FarmPlusRepo/"; // Replace with your URL
+    iframe2.width = "1000"; // Initial width
+    iframe2.height = "610"; // Initial height
+    iframe2.style.right = "105px";
+    iframe2.style.top = "105px"; // Position on the right
+    
+
+    // Append iframes to the container
+    container.appendChild(iframe1);
+    container.appendChild(iframe2);
+
+    // Create first image
+    var img1 = document.createElement("img");
+    img1.src = "assets/img/Mobiletrif1.png"; // Replace with your image URL
+    img1.width = "324"; // Image width
+    img1.height = "796"; // Image height
+    img1.style.left = "55px"; // Adjust position
+    img1.style.top = "50px"; // Adjust position
+
+    // Create second image
+    var img2 = document.createElement("img");
+    img2.src = "assets/img/pctrif1.png"; // Replace with your image URL
+    img2.width = "1090"; // Image width
+    img2.height = "782"; // Image height
+    img2.style.right = "60px"; // Adjust position
+    img2.style.top = "50px"; // Adjust position
+
+    // Append images to the container
+    container.appendChild(img1);
+    container.appendChild(img2);
+}
+
+
+</script>
+
+</body>
+</html>
