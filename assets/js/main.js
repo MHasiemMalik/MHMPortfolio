@@ -98,7 +98,7 @@ window.addEventListener('scroll', scrollActive)
 // Define the text variations
 const texts = [
     "Software Engineer",
-    "FullStack Java Developer",
+    "Fullstack Java Developer",
     "MERN Stack Developer",
     "AI & ML Developer",
     "Android Developer",
