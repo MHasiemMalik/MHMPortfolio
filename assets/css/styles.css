@@ -265,6 +265,7 @@ svg {
   row-gap: 2.5;
 }
 .home__content{
+  padding-top: 0;
   display: grid;
   row-gap: 2rem;
 }
@@ -313,6 +314,7 @@ svg {
 
 .home__image{
   justify-self: center;
+ 
 }
 
 .home__blob{
