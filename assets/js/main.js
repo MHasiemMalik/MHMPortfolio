@@ -143,7 +143,10 @@ function type() {
 // Start typing animation
 type();
 
-
+//Preventing rightclick
+document.addEventListener("contextmenu",function(e){
+    e.preventDefault();   
+}, false);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr=ScrollReveal({
