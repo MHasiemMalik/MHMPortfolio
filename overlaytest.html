@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/f25cce70b4.js" crossorigin="anonymous"></script>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles_hidden.css">
+      <link rel="icon" href="assets/img/lionlogopic.jpeg">
+      <title>~>}M_Hasiem_Malik{<~</title>
+      <style>
+         /* Style for iframes */
+         iframe {
+             border: 1px solid #ccc;
+             display: block;
+             position: relative;
+             z-index: 1;
+         }
+     
+        /* Hide the cursor initially */
+.home__education::after {
+    content: "|";
+    animation: blink-caret 0.95s infinite alternate;
+}
+
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px) rotate(5deg); }
+    50% { transform: translateX(2px) rotate(-5deg); }
+    75% { transform: translateX(-2px) rotate(5deg); }
+    100% { transform: translateX(0); }
+}
+
+#music-icon {
+    animation: shake 1.5s ease infinite; /* Adjust duration and timing as needed */
+}
+
+
+
+
+.nav__item .fas.fa-music,
+.nav__item .ri-volume-mute-fill {
+    color: rgb(0, 255, 85); /* Change to desired color */
+    transition: color 0.3s ease; /* Add transition for smooth effect */
+}
+
+
+
+         #iframesContainer {
+        position: absolute;
+       }
+
+
+       .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  z-index: 101;
+}
+
+.first {
+  background-color: var(--first-color);
+}
+
+.second {
+  background-color: var(--first-color);
+  left: 10%;
+}
+
+.third {
+  background-color: var(--first-color);
+  left: 20%;
+}
+.fourth {
+  background-color: var(--first-color);
+  left: 30%;
+}
+.fifth {
+  background-color: var(--first-color);
+  left: 40%
+}
+.sixth {
+  background-color: var(--first-color);
+  left: 50%
+}
+.seventh {
+  background-color: var(--first-color);
+  left: 60%
+}
+.eighth {
+  background-color: var(--first-color);
+  left: 70%
+}
+.nine {
+  background-color: var(--first-color);
+  left: 80%
+}
+.ten {
+  background-color: var(--first-color);
+  left: 90%
+}
+
+     </style>
+     <script>
+      
+
+
+      function toggleMusic() {
+    const musicIcon = document.getElementById("music-icon");
+    const muteIcon = document.getElementById("mute-icon");
+    const musicPlayer = document.getElementById("background-music");
+     
+    musicPlayer.volume = 0.14;
+
+    if (musicPlayer.paused) {
+        musicPlayer.play();
+        musicIcon.style.display = "none";
+        muteIcon.style.display = "inline"; // Show mute icon
+    } else {
+        musicPlayer.pause();
+        musicIcon.style.display = "inline";
+        muteIcon.style.display = "none"; // Hide mute icon
+    }
+}
+
+
+
+    </script>
+   </head>
+   <body>
+    <!-- OVERLAY -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+    <div class="overlay fourth"></div>
+    <div class="overlay fifth"></div>
+    <div class="overlay sixth"></div>
+    <div class="overlay seventh"></div>
+    <div class="overlay eighth"></div>
+    <div class="overlay nine"></div>
+    <div class="overlay ten"></div>
+
+
+
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+             <a href="" class="nav__logo">
+               ~>}Mohammed Hasiem <span>Malik</span>{<~
+             </a>
+
+
+             <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item"> 
+                     <a href="#home" class="nav__link">Home</a>
+                 </li>
+                  <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                 </li>  
+                 <li class="nav__item">
+                    <a href="#services" class="nav__link">Services</a>
+                 </li> 
+                 <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
+                 </li> 
+                 <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                 </li>
+                 
+                 <audio id="background-music" loop style="display: none;">
+                  <source src="assets/audio/audio portbgm01.mpeg" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
+              
+              <li class="nav__item">
+                  <i class="fas fa-music" id="music-icon" onclick="toggleMusic()"></i>
+                  <i class="ri-volume-mute-fill" id="mute-icon" style="display: none;" onclick="toggleMusic()"></i>
+              </li>
+              
+              
+              
+                 
+               </ul>
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+                </div> 
+           </div>
+   
+           
+  
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"> </i> 
+              </div>
+         </nav>    
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__container">
+                  <div class="home__data">
+                     <h3 class="home__subtitle">
+                        Hello, <span>I’m</span>
+                     </h3>
+                     <h1 class="home__title">
+                         M Hasiem Malik 
+                     </h1>
+                     <h3 class="home__subtitle">
+                        I am 
+                     </h3>
+                     <h3 class="home__education" id="typing-text">
+                         Full-Stack Developer
+                    </h3>
+                     <p class="home__discription">
+                        I am skilled in Full-Stack development, I can create robust web applications with database design and testing.
+                        I am also capable of developing Android and ML applications & delivering high-quality projects.   </p>
+                     <a href="#contact" class="button">Lets Connect</a>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/MHasiemMalik" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                     <a href="https://www.linkedin.com/in/m-hasiem-malik-5116a8260/" class="home__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+                     <a href="https://mail.google.com/mail/" class="home__social-link">
+                        <i class="ri-mail-fill"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__image">
+                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                  
+                     <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="home__img" id="imageBlob" width="640" height="865" href="assets/img/portpic01.png"/>
+                     </defs>
+                  </svg>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+              
+               <div class="about__image">
+                  <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                     </mask>
+                     <g mask="url(#maskBorder)">
+                        <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                        
+                        <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                  
+                     <defs>
+                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/portpic02.png"/>
+                     </defs>
+                  </svg>
+               </div>
+
+
+              <div class="about__data">
+                <h3 class="section__subtitle">
+                  <center>My <span>Intro</span></center> 
+                </h3>
+                <h2 class="section__title">
+                  <center> About Me </center>
+                </h2>
+                <p class="about__description">
+                  My name is Mohammed Hasiem Malik, and I live in india. I completed my matriculation and intermediate  from 
+                  Sri Chaitanya School and Junior College in Hyderabad. Currently, I am pursuing B.Tech in 
+                  Computer Science and Engineering (specializing in Artificial Intelligence and Machine Learning) 
+                  from CMR Group of Institutions in Medchal.
+
+                  Since childhood, I've possessed a strong curiosity and interest in everything related to the software industry, which ultimately led me to pursue a career 
+                  as a Computer Software Engineer. In addition to my academic background, I am skilled in developing Full-stack Web Applications using both Java and MERN, 
+                  as well as Android and ML applications. I possess the ability to develop a broad range of software products and provide great value to any team working on a project. 
+                </p>
+
+                <a href="https://drive.google.com/file/d/1vmKui-o5VhU50ioJcP7loxzgeJbYE6IF/view?usp=drivesdk" class="button">View Resume</a>
+              </div>
+
+              
+            </div>
+            
+         </section>
+
+         <!--==================== SKILLS ====================-->
+         <section class="skills section">
+            <div class="skills__container container grid">
+              <div class="skills__data">
+                 <h3 class="section__subtitle">
+                  Top Favorite <span>Skills</span>
+                 </h3>
+
+                 <h2 class="section__title">
+                  My Skills
+                 </h2>
+
+                 <p class="skills__description">
+                  Discover the range of skills I possess and can utilize to develop projects for you, 
+                  extending beyond common development tools.
+                 </p>
+                 <a href="#projects" class="button">
+                  See Projects
+                 </a>
+               </div>
+
+               <div class="skills__content">
+                  <ol class="skills__group">  
+                     <li class="skills__item">
+                        C & C++</li>
+                     <li class="skills__item">
+                           Java <i class="fab fa-java"></i></i> 
+                     </li>   
+                     <li class="skills__item">
+                        Python <i class="fab fa-python"></i>
+                     </li>
+                     <li class="skills__item">
+                        HTML <i class="fab fa-html5"></i>/CSS <i class="fab fa-css3-alt"></i>
+                     </li>
+                     <li class="skills__item">
+                        Oracle/Mysql <i class="fas fa-database"></i>
+                     </li>
+                     <li class="skills__item">
+                        Spring <i class="fas fa-server"></i>
+                     </li>
+                     <li class="skills__item">
+                        Android <i class="fab fa-android"></i>
+                     </li>
+                     <li class="skills__item">
+                        AI <i class="fas fa-robot"></i>
+                     </li>          
+                  </ol>
+
+                  <ol class="skills__group" start="9">
+                     <li class="skills__item">
+                        Java Script <i class="fab fa-js"></i></li>
+                     <li class="skills__item">
+                        React js <i class="fab fa-react"></i></li>
+                     <li class="skills__item">
+                        Node js <i class="fab fa-node"></i></li>
+                     <li class="skills__item">
+                        Express js <i class="fas fa-file-code"></i></li>
+                     <li class="skills__item">
+                        Angular <i class="fab fa-angular"></i></li>
+                     <li class="skills__item">
+                        Mongodb <i class="fas fa-database"></i></li>
+                     <li class="skills__item">
+                        AWS <i class="fab fa-aws"></i></li>      
+                     <li class="skills__item">
+                        ML <i class="fas fa-laptop-code"></i></li>            
+                  </ol>
+               </div>
+
+            </div>
+            
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h3 class="section__subtitle">
+               My <span>Services
+            </h3>
+
+            <h2 class="section__title">
+               What I Do
+            </h2>
+
+            <div class="services__container container grid">
+                <article class="services__card">
+                  <i class="fab fa-java"></i>
+                    <h2 class="services__title">
+                     Fullstack Java Development
+                    </h2>
+
+                    <p class="services__description">
+                     I am specialized in developing web applications with dedicated Front-end, Back-end, Server, and Database components.
+                      I leverage current technologies such as Spring Boot, Jakarta EE, and Servlets for server-side scripting, and HTML or Angular for the user interface. 
+                     Additionally, I utilize various tools including Maven, Mockito, JUnit, Docker, Postman, and Heroku for testing, integration, and deployment
+                    </p>
+                </article>
+
+                <article class="services__card">
+                  <i class="ri-layout-line"></i>
+                    <h2 class="services__title">
+                     Web Development Using MERN
+                    </h2>
+
+                    <p class="services__description">
+                     I am specialized in the development of single-page web applications, leveraging technologies such as React.js, Node.js, Express.js, and MongoDB. 
+                     These technologies enable me to develop various components of web applications, including NoSQL databases, server-side logic, and libraries.
+                      Additionally, I stay up-to-date with the latest frameworks like Next.js, which enhance the delivery of a seamless user experience.
+                    </p>
+                </article>
+
+
+                
+
+                <article class="services__card">
+                  <i class="fab fa-android"></i>
+                    <h2 class="services__title">
+                     Android Development
+                    </h2>
+
+                    <p class="services__description">
+                     I focus on the development of standalone mobile applications, emphasizing scalability and maintainability. 
+                     This involves integrating database functionality and HTTPS URL connections. 
+                     I predominantly use Kotlin or Java with IDEs like Android Studio, and I incorporate various technologies 
+                     such as Flutter, Jetpack Compose, and network connectivity features. Additionally, I adeptly manage data 
+                     storage and presentation with adaptive layouts, contributing to improved overall performance.
+                    </p>
+                </article>
+
+
+                <article class="services__card">
+                  <i class="fas fa-laptop-code"></i>
+                  <i class="fas fa-tools"></i>
+                    <h2 class="services__title">
+                     AI & ML Development
+                    </h2>
+
+                    <p class="services__description">
+                     I focus on creating and deploying Artificial Intelligence and Machine Learning systems to tackle challenges, automate tasks,
+                      and enhance decision-making processes, including computer vision and NLP.
+                       This involves the conception, training, and implementation of algorithms and models that can autonomously
+                        learn from data and make predictions or decisions without the need for explicit programming instructions.
+                    </p>
+                </article>
+
+                <article class="services__card">
+                  <i class="fas fa-chart-line"></i>
+                  <i class="fas fa-search"></i>
+                    <h2 class="services__title">
+                     Data Analysis
+                    </h2>
+
+                    <p class="services__description">
+                     I use scientific methods, algorithms, processes, and systems to extract valuable knowledge and insights from raw data.
+                      Utilizing technologies such as Power BI, Python, and Tableau, I engage in predictive modeling to reveal patterns, trends, 
+                      and relationships within data, transforming them into visualization techniques to uncover hidden insights  
+                      for informed decision-making and optimization across various industries</p>
+                </article>
+
+                <article class="services__card">
+                  <i class="fas fa-pen-nib"></i>
+                  <i class="far fa-edit"></i>
+                    <h2 class="services__title">
+                     UX Designing & Editing
+                    </h2>
+
+                    <p class="services__description">
+                     It involves crafting intuitive and engaging user experiences (UX) through meticulous design and editing processes using tools like Figma,
+                      Adobe XD, and InVision. This encompasses a variety of activities focused on enhancing how users interact with digital products, websites,
+                       applications, or services to efficiently.This process also entails conducting user research and testing to iteratively refine
+                        designs and ensure they resonate with the target audience</p>
+                </article>
+
+                <article class="services__card">
+                  <i class="fas fa-cogs"></i>
+                    <h2 class="services__title">
+                     Testing
+                    </h2>
+
+                    <p class="services__description">
+                     In software development, testing is a crucial phase aimed at ensuring the quality, 
+                     reliability, and performance of the software product. Various testing techniques 
+                     and tools like JUnit,TestNG,Postman & Selenium are utilized to identify bugs, verify functionality, and validate the 
+                     behavior under different conditions.Some common Testing strategies 
+                     include Unit, Integration, Functional, Performance and Regression Testing. 
+                    </p>
+                </article>
+            </div>
+            
+         </section>
+         <!--==================== CERTIFICATIONS ====================-->
+         <section class="certificate section" id="certificates">
+           
+          <h3 class="section__subtitle">
+            My Experience and<span> qualifications </span>
+          </h3>
+          <h2 class="section__title">
+            Recent Certifications
+          </h2>
+
+          <center><div class="cert__image">
+            <svg class="cert__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+               <mask id="maskBlob" mask-type="alpha">
+                  <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                  170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                  447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                  587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                  438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+               </mask>
+               <g mask="url(#maskBlob)">
+                  <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                  170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                  447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                  587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                  438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+            
+                  <rect x="37" width="476" height="630" fill="url(#pattern004)"/>
+               </g>
+            
+               <rect x="37" width="476" height="300" fill="url(#pattern104)"/>
+            
+               <defs>
+                  <pattern id="pattern004" patternContentUnits="objectBoundingBox" width="1" height="1">
+                     <use href="#imageBlobcert" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                  </pattern>
+            
+                  <pattern id="pattern104" patternContentUnits="objectBoundingBox" width="1" height="1">
+                     <use href="#imageBlobcert" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                  </pattern>
+            
+                  <!-- Insert your profile (recommended size: 640 x 940) -->
+                  <image class="cert__imge" id="imageBlobcert" width="640" height="865" href="assets/img/portpic06.png"/>
+               </defs>
+            </svg>
+         </div></center>
+
+          <div class="certificate__container container grid">
+
+            <article class="cert__card">
+               <img src="assets/Certpics/ccert4.jpeg" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">SIH Hackathon</h2>
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7113949371905306624/" class="cert__button">
+                     View Details <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+               
+            </article>
+
+            <article class="cert__card">
+               <img src="assets/Certpics/Fsjava.jpeg" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">FullStack Java Development</h2>
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7167203605341462529/" class="cert__button">
+                     View Details <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+               
+            </article>
+
+            <article class="cert__card">
+               <img src="assets/Certpics/ccert3.jpeg" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">Science Hackathon</h2>
+                  <a href="https://www.instagram.com/p/Cahb319rVu-/?img_index=1" class="cert__button">
+                     View Details <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+               
+            </article>
+
+            <article class="cert__card">
+               <img src="assets/Certpics/Pent1ml.png" alt="" class="cert__img">
+               <div class="cert__model">
+                  <h2 class="cert__title">Machine Learning</h2>
+               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7117067242369888256/" class="cert__button">
+                  View Details <i class="ri-external-link-line"></i>
+               </a>
+               </div>
+               
+            </article>
+            <article class="cert__card">
+               <img src="assets/Certpics/pent3ai.png" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">Generative AI</h2>
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7159947571598172160/" class="cert__button">
+                     View Details <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+               
+            </article>
+            <article class="cert__card">
+               <img src="assets/Certpics/pent2iot.png" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">IOT Development</h2>
+               <a href="https://www.linkedin.com/feed/update/urn:li:activity:7097927703818903553/" class="cert__button">
+                  View Details <i class="ri-external-link-line"></i>
+               </a>
+               </div>
+               
+            </article>
+            <article class="cert__card">
+               <img src="assets/Certpics/aicte1ad.png" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">AWS Internship</h2>
+               <a href="https://www.credly.com/badges/b6c4b252-276b-4edc-9763-9ad2b58a0250/linked_in_profile" class="cert__button">
+                  View Details <i class="ri-external-link-line"></i>
+               </a>
+               </div>
+               
+            </article>
+            <article class="cert__card">
+               <img src="assets/Certpics/SIDSA.png" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">DSA</h2>
+               <a href="https://smartinterviews.in/certificate/75432dee" class="cert__button">
+                  View Details <i class="ri-external-link-line"></i>
+               </a>
+               </div>
+               
+            </article>
+            <article class="cert__card">
+               <img src="assets/Certpics/aicte2ad.png" alt="" class="cert__img">
+
+               <div class="cert__model">
+                  <h2 class="cert__title">Android Development</h2>
+               <a href="https://developers.google.com/profile/u/HasiemMalik_CmrEngineercollege" class="cert__button">
+                  View Details <i class="ri-external-link-line"></i>
+               </a>
+               </div>
+               
+            </article>
+          </div>
+
+         </section>
+
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h3 class="section__subtitle">
+               My <span>jobs</span>
+            </h3>
+
+            <h2 class="section__title">
+              Recent Projects 
+            </h2>
+
+            <div class="project__container container grid">
+               <div id="pblock"> 
+                  <img src="assets/img/portpic04.png" alt="" id="projectimg">
+              </div>
+
+            
+            
+          </div>
+
+          <br>
+          <div class="project__container2 container grid">
+
+         
+
+
+            
+
+            <article class="services__card">
+               <img src="assets/projpics/Farmp.jpeg" alt="" class="proimgicon">
+               
+                  <div class="farmimg09">
+                     <img src="assets/projpics/farmplus gif.gif" alt="" class="fp1" id="fpic1">
+                     <img src="assets/projpics/f2.png" alt="" class="fp1" id="fpic2">
+                     <img src="assets/projpics/f6.png" alt="" class="fp1" id="fpic3">
+                     <img src="assets/projpics/f3.png" alt="" class="fp1" id="fpic4">
+                     <img src="assets/projpics/f4.png" alt="" class="fp1" id="fpic5">
+                  </div>
+               
+               <br>
+               <div class="farmimg09">
+                  <img src="assets/projpics/f5.png" alt="" class="fp2" id="fpic6">
+                  <img src="assets/projpics/f7.png" alt="" class="fp2" id="fpic7">      
+               </div>
+               <br>
+                 <h2 class="services__title">
+                  Farm+ (Farming Made Ezy)
+                 </h2>
+                 <h3 class="section__subtitle">
+                  Techstack : <span>HTML/CSS/JAVASCRIPT, JSP, ORACLE, TOMCAT 9.0</span>
+               </h3>
+                 <p class="services__description">
+                  An Enterprise level applications for the farmers which deals with all the aspects
+                  of agriculture of 766+ districts in india with the Growing Mechanism of
+                  Horticulture in 100+ languages ,  It features real-time monitoring & mapping of hourly weather 
+                  conditions and incorporates a predictive tool for forecasting resource requirements 
+                  such as water, seeds, fertilizers, and time based on soil type, crop, and production quantity.  
+                  And Common E-commerce Market Place to sell and buy.
+                 </p>
+                 
+                 <a href="https://farmplus-web.netlify.app/" class="button" >Visit Page</a>
+                  <!--button class="button" onclick="loadIframes()">Load Iframes</button-->
+                 <a href="https://github.com/MHasiemMalik/FarmPLusC" class="button" >Visit  Repo</a>
+             </article>    
+
+             <article class="services__card">
+               <img src="assets/projpics/Vavelink.jpeg" alt="" class="proimgicon">
+               
+                  <div class="farmimg09">  
+                     <img src="assets/projpics/vavelink gif.gif" alt="" class="fp1" id="vlpic1"><br>
+                     <img src="assets/projpics/v31.png" alt="" class="fp1" id="vlpic2">
+                     <img src="assets/projpics/v7.jpg" alt="" class="fp1" style="height: 140px;" id="vlpic3">
+                     <img src="assets/projpics/v6.jpeg" alt="" class="fp1" id="vlpic4">
+                     
+                     
+                  </div>
+               
+               <br>
+               <div class="farmimg09">
+                  <img src="assets/projpics/v2.png" alt="" class="fp2" id="vlpic5">
+                  <img src="assets/projpics/v5.png" alt="" class="fp2" id="vlpic6">      
+               </div>
+               <br>
+                 <h2 class="services__title">
+                  VaveLink 
+                 </h2>
+                 <h3 class="section__subtitle">
+                  Techstack : <span>WEBRTC, AGORA, Socket io, HTML/CSS/JS, Node JS, EXPRESS JS</span>
+               </h3>
+                 <p class="services__description">
+                  A versatile web application built on WebRTC, Socket.IO, and Agora SDK,
+                  offering seamless communication via video, voice, and messages. With a focus
+                  on flexibility, privacy, and quality, VaveLink simplifies communication by
+                  enabling users to create rooms and connect with others without the need of
+                  mobile numbers, email addresses, or credentials                 
+                 </p>
+                 
+                 <a href="https://vavelinkbymalik.vercel.app/" class="button" >Visit Page</a>
+                  <!--button class="button" onclick="loadIframes()">Load Iframes</button-->
+                 <a href="https://github.com/MHasiemMalik/VavelinkProjectCompleteRepo/tree/VaveLinkHome" class="button" >Visit  Repo</a>
+             </article>  
+
+
+             <article class="services__card">
+               <img src="assets/projpics/Searchvian.jpeg" alt="" class="proimgicon">
+               
+                  <div class="farmimg09">  
+                     <img src="assets/projpics/serachvian gif.gif" alt="" class="fp1" id="svpic1"><br>
+                     <img src="assets/projpics/sv5.png" alt="" class="fp1" id="svpic2">
+                     <img src="assets/projpics/sv2.png" alt="" class="fp1" id="svpic3">
+                     
+                  </div>
+               
+               <br>
+               <div class="farmimg09">
+                  <img src="assets/projpics/sv3.png" alt="" class="fp2" id="svpic4">
+                  <img src="assets/projpics/sv4.png" alt="" class="fp2" id="svpic5">      
+               </div>
+               <br>
+                 <h2 class="services__title">
+                  SerachVian 
+                 </h2>
+                 <h3 class="section__subtitle">
+                  Techstack : <span>Rapid API,Tailwind css,React js,Node js</span>
+               </h3>
+                 <p class="services__description">
+                  A Search Engine website powered by the Google Search API, capable of retrieving comprehensive information from the internet, 
+                  including images and websites. With its user-friendly interface and advanced search capabilities, users can quickly access relevant 
+                  web and image data tailored to their queries.                  
+                 </p>
+                 
+                 <a href="https://searchvianbymalik.netlify.app/" class="button" >Visit Page</a>
+                  <!--button class="button" onclick="loadIframes()">Load Iframes</button-->
+                 <a href="https://github.com/MHasiemMalik/SearchvianHome/tree/IndexMain" class="button" >Visit  Repo</a>
+             </article>  
+
+
+             <article class="services__card">
+               <img src="assets/projpics/Playnor.jpeg" alt="" class="proimgicon">
+               
+                  <div class="farmimg09">
+                     <img src="assets/projpics/dino pr.gif" alt="" class="fp1" id="prpic2">  
+                     <img src="assets/projpics/playnor gif.gif" alt="" class="fp1" id="prpic1">
+                     <img src="assets/projpics/pr5.png" alt="" class="fp1" id="prpic1">
+                     <img src="assets/projpics/shuttle pr.gif" alt="" class="fp1" id="prpic2">
+                     
+                 
+                 </div>
+               
+               <br>
+               <div class="farmimg09">
+                  <img src="assets/projpics/pr4.png" alt="" class="fp2" id="prpic3">      
+               </div>
+               <br>
+                 <h2 class="services__title">
+                  Playnor 
+                 </h2>
+                 <h3 class="section__subtitle">
+                  Techstack : <span>HTML,CSS,JAVASCRIPT</span>
+               </h3>
+                 <p class="services__description">
+                  Welcome to the Games Corner, where users can immerse themselves in a collection of classic online games 
+                  reminiscent of the early 2000s arcade era. Featuring beloved titles such as Space Shuttle, Chess, Pacman, 
+                  Chrome Dino, Pong, and more, this website offers a nostalgic trip down memory lane. With a focus on OG Games arcade 
+                  classics that were immensely popular in the early 2000s, like Pacman and others, users can experience the timeless charm of these iconic titles right from their browsers.               
+                 </p>
+                 
+                 <a href="https://mhasiemmalik.github.io/PlaynorHome/" class="button" >Visit Page</a>
+                  <!--button class="button" onclick="loadIframes()">Load Iframes</button-->
+                 <a href="https://github.com/MHasiemMalik/PlaynorMainRepo/tree/indexMainRepo" class="button" >Visit  Repo</a>
+             </article> 
+
+
+             <article class="services__card">
+               <img src="assets/projpics/eqhonex.jpeg" alt="" class="proimgicon">
+               
+                  <div class="farmimg09">  
+                     
+                     
+                     
+                  </div>
+               
+               <br>
+               <div class="farmimg09">
+                  
+               </div>
+               <br>
+                 <h2 class="services__title">
+                  Eqhonex (Under Development)
+                 </h2>
+                 <h3 class="section__subtitle">
+                  Techstack : <span>React js,Next js,MongoDB,Tailwindcss</span>
+               </h3>
+                 <p class="services__description">
+                  Introducing a Fullstack Communities Platform, empowering users to create and participate in threads within their 
+                  own communities, fostering real-time interaction. Leveraging tools such as Clerk for login verifications, Webhooks 
+                  for seamless connectivity, and Uploadthing for secure uploads, the platform ensures a smooth user experience while 
+                  maintaining robust server connectivity. Whether it's engaging discussions, sharing insights, or networking with like-minded 
+                  individuals, our platform provides a dynamic space for vibrant community interactions.          
+                 </p>
+                 
+                 <a href="https://mhasiemmalik.github.io/EqhonexHome/" class="button" >Visit Page</a>
+                  <!--button class="button" onclick="loadIframes()">Load Iframes</button-->
+                 <a href="https://github.com/MHasiemMalik/EqhonexHome/tree/indexMain" class="button" >Visit  Repo</a>
+             </article> 
+            <!-- Similarly for other articles -->
+
+          
+            
+          </div>
+          
+          
+
+
+
+
+            
+           
+            
+         </section>
+         <center><div id="iframesContainer"></div></center>
+         
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+                  
+              <div class="cont__image" id="contpic">
+               <h3 class="section__subtitle">
+                  Get in <span>Touch</span>
+                </h3>
+               <center><svg class="cont__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                     <mask id="maskBlob03" mask-type="alpha">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                     </mask>
+                     <g mask="url(#maskBlob03)">
+                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                  
+                        <rect x="37" width="476" height="630" fill="url(#pattern003)"/>
+                     </g>
+                  
+                     <rect x="37" width="476" height="300" fill="url(#pattern103)"/>
+                  
+                     <defs>
+                        <pattern id="pattern003" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob03" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <pattern id="pattern103" patternContentUnits="objectBoundingBox" width="1" height="1">
+                           <use href="#imageBlob03" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                  
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image class="cont__img" id="imageBlob03" width="640" height="865" href="assets/img/portpic03.png"/>
+                     </defs>
+                  </svg></center>
+
+                  <h2 class="section__title">
+                     Contact Me
+                   </h2>
+               </div>
+
+            
+             <div class="contact__container container grid">
+               <form action=" " class="contact__form" id="contact-form">
+                 <div class="contact__group">
+                  <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                  <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+                 </div>
+                 
+                <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+
+                <p class="contact__message" id="contact-message"></p>
+
+                <button type="submit" class="button contact__button">
+                  Send Message
+                </button>
+               </form>
+              </div> 
+             
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div>
+               <h1 class="footer__title">
+                  Mohammed Hasiem <span>Malik</span>
+               </h1>
+               <h2 class="footer__education">
+                  Software Engineer 
+               </h2>   
+            </div>
+            
+            <div class="footer__social">
+               <a href="https://www.instagram.com/mhasiemmalik/" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+               <a href="https://www.facebook.com/hasiem.malik.5/" class="footer__social-link">
+                  <i class="ri-facebook-fill"></i>
+               </a>
+               <a href="https://twitter.com/hasiem_malik665" class="footer__social-link">
+                  <i class="fa-brands fa-x-twitter" style="padding-top: 1px;"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy">
+               &#169; Copyrighted By the Dev. All rights reserved
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+
+      <a href="#home" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      
+      <script>
+      gsap.to(".first", 1.5, {delay: .1, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".second", 1.5, {delay: .2, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".third", 1.5, {delay: .3, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".fourth", 1.5, {delay: .4, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".fifth", 1.5, {delay: .5, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".sixth", 1.5, {delay: .6, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".seventh", 1.5, {delay: .7, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".eighth", 1.5, {delay: .8, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".nine", 1.5, {delay: .9, top: "-100%", ease: Expo.easeInOut});
+      gsap.to(".ten", 1.5, {delay: .99, top: "-100%", ease: Expo.easeInOut});
+
+      
+      
+      /*
+         function loadIframes() {
+             // Get the container div
+             var container = document.getElementById("iframesContainer");
+             
+         
+             // Create first iframe
+             var iframe1 = document.createElement("iframe");
+             iframe1.src = "https://mhasiemmalik.github.io/FarmPlusRepo/"; // Replace with your URL
+             iframe1.width = "300"; // Initial width
+             iframe1.height = "620"; // Initial height
+             iframe1.style.left = "84px";
+             iframe1.style.top = "112px"; // Position on the left
+             
+         
+             // Create second iframe
+             var iframe2 = document.createElement("iframe");
+             iframe2.src = "https://mhasiemmalik.github.io/FarmPlusRepo/"; // Replace with your URL
+             iframe2.width = "1030"; // Initial width
+             iframe2.height = "560"; // Initial height
+             iframe2.style.right = "60px";
+             iframe2.style.top = "100px"; // Position on the right
+             
+         
+             // Append iframes to the container
+             container.appendChild(iframe1);
+             container.appendChild(iframe2);
+         
+             // Create first image
+             var img1 = document.createElement("img");
+             img1.src = "assets/img/Mobiletrif1.png"; // Replace with your image URL
+             img1.width = "365"; // Image width
+             img1.height = "800"; // Image height
+             img1.style.left = "55px"; // Adjust position
+             img1.style.top = "50px"; // Adjust position
+         
+             // Create second image
+             var img2 = document.createElement("img");
+             img2.src = "assets/img/pctrif1.png"; // Replace with your image URL
+             img2.width = "1110"; // Image width
+             img2.height = "782"; // Image height
+             img2.style.right = "100px"; // Adjust position
+             img2.style.top = "50px"; // Adjust position
+         
+             // Append images to the container
+             container.appendChild(img1);
+             container.appendChild(img2);
+         }
+         
+         */
+         </script>
+         
+   </body>
+</html> 
