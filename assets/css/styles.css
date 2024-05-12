@@ -161,7 +161,7 @@ svg {
    background-color: var(--container-color);
    top:0;
    left:0;
-   z-index: var(-fixed-z-);
+   z-index: var(--z-fixed);
 }
 
 .nav{
@@ -245,7 +245,7 @@ svg {
   --webkit-backdrop-filter:blur(24px);
   top:0;
   left: 0;
-  z-index: -1;;
+  z-index: -1;
 }
 
 
