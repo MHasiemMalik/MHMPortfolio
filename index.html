@@ -10,6 +10,7 @@
       <!--=============== REMIXICONS ===============-->
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/f25cce70b4.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles_hidden.css">
       <link rel="icon" href="assets/img/lionlogopic.jpeg">
@@ -72,7 +73,7 @@
   left: 0;
   width: 10%;
   height: 100%;
-  z-index: 101;
+  z-index: 102;
 }
 
 .first {
@@ -117,6 +118,15 @@
   left: 90%
 }
 
+#canvas{
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Using viewport width */
+    height: 100vh;
+}  
      </style>
      <script>
       
@@ -139,8 +149,6 @@
         muteIcon.style.display = "none"; // Hide mute icon
     }
 }
-
-
 
     </script>
    </head>
@@ -289,7 +297,7 @@
          </section>
 
          <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
+        <section class="about section" id="about">
             <div class="about__container container grid">
               
                <div class="about__image">
@@ -428,7 +436,7 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section" id="services">
+             <section class="services section" id="services">
             <h3 class="section__subtitle">
                My <span>Services
             </h3>
@@ -542,7 +550,8 @@
                 </article>
             </div>
             
-         </section>
+             </section>
+
          <!--==================== CERTIFICATIONS ====================-->
          <section class="certificate section" id="certificates">
            
@@ -980,7 +989,7 @@
                 </button>
                </form>
               </div> 
-             
+              <canvas class="confetti" id="canvas"></canvas>
          </section>
       </main>
 
@@ -1099,6 +1108,6 @@
          
          */
          </script>
-         
+        <script src="assets/js/confetti.js"></script> 
    </body>
 </html> 

@@ -43,13 +43,22 @@ window.addEventListener('scroll', blurHeader)
 const contactForm=document.getElementById('contact-form');
       contactMessage=document.getElementById('contact-message');
 
+     
+
 const sendEmail=(e) =>{
     e.preventDefault();
     
 
     emailjs.sendForm('service_1q9le9f','template_36fnora','#contact-form','IG6fsbrHf2OWW7FRc')
      .then(()=>{
-        contactMessage.textContent='Message sent successfully 😊✅'
+        var canvas = document.getElementById('canvas');
+        canvas.style.display = "block";
+   // Hide the canvas after 10 seconds
+        setTimeout(function() {
+            canvas.style.display = "none";
+        }, 18000);     
+        swal("Thank You!", "Message Received Successfully, I Will Contact You Very Soon", "success");                  
+        
 
         setTimeout(()=>{
             contactMessage.textContent='' 
@@ -58,7 +67,7 @@ const sendEmail=(e) =>{
         contactForm.reset()
 
      },()=>{
-        contactMessage.textContent='Message not sent (service error) ☹️❌'
+        swal("Oops!", "There Was An Issue Sending The Message! Please Check Network and Try Again", "error");
      })
 }
 
