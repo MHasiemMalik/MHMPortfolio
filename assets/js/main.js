@@ -109,10 +109,9 @@ const texts = [
     "Software Engineer",
     "Fullstack Java Developer",
     "MERN Stack Developer",
-    "AI & ML Developer",
-    "Android Developer",
-    "Tester",
     "UX Designer",
+    "AI & ML Developer",
+    "Tester",
     "Video Editor"
 ];
 
