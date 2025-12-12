@@ -166,7 +166,7 @@ const sr=ScrollReveal({
 })
 
 sr.reveal(`.home__data,.home__social ,.footer__container,.cert__image,#fpic7,#fpic4,#vlpic3,#vlpic5,#prpic3`)
-sr.reveal(`.home__image,.certificate__container,#fpic6,#fpic3,#vlpic1,#vlpic6,#svpic1`,{origin:'bottom'})
-sr.reveal(`.about__data,.skills__data,.project__container,#fpic1,#vlpic2,#svpic3,#svpic4,#prpic1,#contact-form`,{origin:'left'})
-sr.reveal(`.about__image,.skills__content,#fpic2,#fpic5,#vlpic4,#svpic2,#svpic5,#prpic2,#contpic`,{origin:'right'})
+sr.reveal(`.home__image,.certificate__container,#fpic6,#fpic3,#vlpic1,#vlpic6,#svpic1,#prpic1`,{origin:'bottom'})
+sr.reveal(`.about__data,.skills__data,.project__container,#fpic1,#vlpic2,#svpic3,#svpic4,#prpic4,#prpic5,#contact-form`,{origin:'left'})
+sr.reveal(`.about__image,.skills__content,#fpic2,#fpic5,#vlpic4,#svpic2,#svpic5,#prpic2,#prpic6,#contpic`,{origin:'right'})
 sr.reveal(`.services__card,.projects__card`,{interval:'100'})
